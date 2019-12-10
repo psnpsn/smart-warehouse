@@ -5,6 +5,7 @@
  */
 package tn.esprit.MSProducts.entity;
 
+import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -16,21 +17,32 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Product {
     
     @Id
-	private String id;
-	private String name;
-	private String description;
-	private Double price;
+    private String id;
+    private String name;
+    private String description;
+    private Double price;
+    private Date addedDate;
+    private String condition;
+    private Tag tag;
+    private Location location;
+    private Category category;
 
     public Product() {
     }
 
-    public Product(String id, String name, String description, Double price) {
+    public Product(String id, String name, String description, Double price, Date addedDate, String condition, Tag tag, Location location, Category category) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
+        this.addedDate = addedDate;
+        this.condition = condition;
+        this.tag = tag;
+        this.location = location;
+        this.category = category;
     }
 
+    
     public String getId() {
         return id;
     }
@@ -62,4 +74,46 @@ public class Product {
     public void setPrice(Double price) {
         this.price = price;
     }
+
+    public Date getAddedDate() {
+        return addedDate;
+    }
+
+    public void setAddedDate(Date addedDate) {
+        this.addedDate = addedDate;
+    }
+
+    public String getCondition() {
+        return condition;
+    }
+
+    public void setCondition(String condition) {
+        this.condition = condition;
+    }
+
+    public Tag getTag() {
+        return tag;
+    }
+
+    public void setTag(Tag tag) {
+        this.tag = tag;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+    
+    
 }
