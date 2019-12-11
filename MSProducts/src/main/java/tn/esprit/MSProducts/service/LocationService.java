@@ -7,21 +7,21 @@ package tn.esprit.MSProducts.service;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import tn.esprit.MSProducts.entity.Product;
+import tn.esprit.MSProducts.entity.Location;
 
 /**
  *
  * @author psn
  */
-public interface ProductService {
+public interface LocationService {
     
-    public Flux<Product> getAll();
+    public Flux<Location> getAll();
     
-    public Mono<Product> getById(final String id);
+    public Mono<Location> getById(final String id);
     
-    public Mono update(final String id, final Product product);
+    public Mono update(final String id, final Location location);
     
-    public Mono save(final Product product);
+    public Mono save(final Location location);
     
     public Mono delete(final String id);
     

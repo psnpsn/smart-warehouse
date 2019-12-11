@@ -16,41 +16,38 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import tn.esprit.MSProducts.entity.Product;
-import tn.esprit.MSProducts.service.ProductService;
-import tn.esprit.MSProducts.service.ProductServiceImpl;
+import tn.esprit.MSProducts.entity.Location;
+import tn.esprit.MSProducts.service.LocationService;
 
 /**
  *
  * @author psn
  */
 @RestController
-@RequestMapping("product")
-public class ProductController {
+@RequestMapping("location")
+public class LocationController {
     
-        @Autowired
-        private ProductService productService;
-
-        
-	@GetMapping
-	public Flux<Product> getAll() {
-		return productService.getAll();
+    @Autowired
+    private LocationService locationService;
+    
+    @GetMapping
+	public Flux<Location> getAll() {
+		return locationService.getAll();
 	}
 	@GetMapping("{id}")
 	public Mono getById(@PathVariable("id") final String id) {
-		return productService.getById(id);
+		return locationService.getById(id);
 	}
 	@PutMapping("{id}")
-	public Mono updateById(@PathVariable("id") final String id, @RequestBody final Product product) {
-		return productService.update(id, product);
+	public Mono updateById(@PathVariable("id") final String id, @RequestBody final Location location) {
+		return locationService.update(id, location);
 	}
 	@PostMapping
-	public Mono save(@RequestBody final Product product) {
-		return productService.save(product);
+	public Mono save(@RequestBody final Location location) {
+		return locationService.save(location);
 	}
 	@DeleteMapping("{id}")
 	public Mono delete(@PathVariable final String id) {
-		return productService.delete(id);
+		return locationService.delete(id);
 	}
-        
 }
