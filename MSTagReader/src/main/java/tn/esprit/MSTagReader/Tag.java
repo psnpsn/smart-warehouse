@@ -47,6 +47,12 @@ public class Tag {
     public void setDiscoveryTime(long discoveryTime) {
         this.discoveryTime = discoveryTime;
     }
+
+    @Override
+    public String toString() {
+        return "Tag{" + "id=" + id + ", gatewayId=" + gatewayId + ", discoveryTime=" + discoveryTime + '}';
+    }
+    
     
     
 }

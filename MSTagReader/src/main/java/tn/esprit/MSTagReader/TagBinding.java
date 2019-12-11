@@ -5,20 +5,16 @@
  */
 package tn.esprit.MSTagReader;
 
-import org.springframework.amqp.core.Queue;
+import org.springframework.cloud.stream.annotation.Output;
+import org.springframework.messaging.MessageChannel;
 
 /**
  *
  * @author psn
  */
-public class RabbitConfiguration {
+public interface TagBinding {
     
-    private String fanoutExchange;
-    
-    private String queueName;
-    
-    Queue queue() {
-        return new Queue(queueName, true);
-    }
+    @Output("tagreadingChannel")
+    MessageChannel tagreading();
     
 }
