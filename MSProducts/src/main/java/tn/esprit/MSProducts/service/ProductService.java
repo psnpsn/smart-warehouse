@@ -6,6 +6,7 @@
 package tn.esprit.MSProducts.service;
 
 import java.util.Objects;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import tn.esprit.MSProducts.entity.Product;
@@ -15,6 +16,7 @@ import tn.esprit.MSProducts.repository.ProductRepository;
  *
  * @author psn
  */
+@Service
 public class ProductService {
     
     private final ProductRepository productRepository;

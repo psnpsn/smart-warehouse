@@ -5,7 +5,6 @@
  */
 package tn.esprit.MSProducts.controller;
 
-import org.springframework.data.annotation.Id;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,8 +31,6 @@ public class ProductController {
     public ProductController(final ProductService productService) {
         this.productService = productService;
     }
-        
-        
         
 	@GetMapping
 	public Flux<Product> getAll() {
