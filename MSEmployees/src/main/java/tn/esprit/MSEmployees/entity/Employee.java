@@ -18,16 +18,49 @@ public class Employee {
     @Id
     private String id;
     private String name;
+    private String dateOfBirth;
     private String address;
+    private String status;
+    private String badgeId;
+
+    public Employee(String id, String name, String dateOfBirth, String address, String status, String badgeId) {
+        this.id = id;
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.address = address;
+        this.status = status;
+        this.badgeId = badgeId;
+    }
 
     public Employee() {
     }
 
-    public Employee(String id, String name, String address) {
-        this.id = id;
-        this.name = name;
-        this.address = address;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    
+    public String getBadgeId() {
+        return badgeId;
+    }
+
+    public void setBadgeId(String badgeId) {
+        this.badgeId = badgeId;
+    }
+
+    
 
     public String getId() {
         return id;
