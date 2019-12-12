@@ -15,7 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Location {
     
-    @Id
+    
     private String id;
     
     private String gatewayId;

@@ -18,12 +18,12 @@ public class Tag {
     @Id
     private String id;
     private String gatewayId;
-    private long discoveryTime;
+    private String discoveryTime;
 
     public Tag() {
     }
 
-    public Tag(String id, String gatewayId, long discoveryTime) {
+    public Tag(String id, String gatewayId, String discoveryTime) {
         this.id = id;
         this.gatewayId = gatewayId;
         this.discoveryTime = discoveryTime;
@@ -45,11 +45,11 @@ public class Tag {
         this.gatewayId = gatewayId;
     }
 
-    public long getDiscoveryTime() {
+    public String getDiscoveryTime() {
         return discoveryTime;
     }
 
-    public void setDiscoveryTime(long discoveryTime) {
+    public void setDiscoveryTime(String discoveryTime) {
         this.discoveryTime = discoveryTime;
     }
 

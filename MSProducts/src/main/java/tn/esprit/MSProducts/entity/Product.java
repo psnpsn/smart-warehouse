@@ -21,7 +21,7 @@ public class Product {
     private String name;
     private String description;
     private Double price;
-    private Date addedDate;
+    private String addedDate;
     private String condition;
     private Tag tag;
     private Location location;
@@ -31,7 +31,7 @@ public class Product {
     public Product() {
     }
 
-    public Product(String id, String name, String description, Double price, Date addedDate, String condition, Tag tag, Location location, Category category, String supplierId) {
+    public Product(String id, String name, String description, Double price, String addedDate, String condition, Tag tag, Location location, Category category, String supplierId) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -77,11 +77,11 @@ public class Product {
         this.price = price;
     }
 
-    public Date getAddedDate() {
+    public String getAddedDate() {
         return addedDate;
     }
 
-    public void setAddedDate(Date addedDate) {
+    public void setAddedDate(String addedDate) {
         this.addedDate = addedDate;
     }
 
