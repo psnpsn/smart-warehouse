@@ -37,14 +37,14 @@ public class CameraController {
   
   
   @PostMapping(path="/add") // Map ONLY POST Requests
-  public @ResponseBody String addNewCamera (@RequestParam double storing
+  public @ResponseBody String addNewCamera (@RequestParam String storing , @RequestParam String state
       ) {
     // @ResponseBody means the returned String is the response, not a view name
     // @RequestParam means it is a parameter from the GET or POST request
 
     Camera n = new Camera();
     n.setStoring_dir(storing);;
-
+    n.setState(state);
     CameraRepository.save(n);
     return "Saved";
   }

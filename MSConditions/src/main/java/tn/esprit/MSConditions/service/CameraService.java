@@ -3,12 +3,13 @@ package tn.esprit.MSConditions.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import tn.esprit.MSConditions.entity.Camera;
-import tn.esprit.MSConditions.entity.Environment;
 import tn.esprit.MSConditions.repository.CameraRepository;
 import tn.esprit.MSConditions.repository.EnvironmentRepository;
 
+@Service
 public class CameraService {
 	@Autowired
 	private CameraRepository candidatRepository;
