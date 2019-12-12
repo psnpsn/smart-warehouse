@@ -1,0 +1,81 @@
+[
+    { "id" : "T001", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T002", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T003", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T004", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T005", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T006", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:55:22" },
+
+    { "id" : "T007", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T008", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T009", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:53:22" },
+
+    { "id" : "T010", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T011", "gatewayId" : "G002", "discoveryTime" : "2019-12-02 13:52:22" },
+
+    { "id" : "T012", "gatewayId" : "G002", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T013", "gatewayId" : "G002", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T014", "gatewayId" : "G002", "discoveryTime" : "2019-12-02 13:55:22" },
+
+    { "id" : "T015", "gatewayId" : "G002", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T016", "gatewayId" : "G002", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T017", "gatewayId" : "G002", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T018", "gatewayId" : "G002", "discoveryTime" : "2019-12-02 13:54:22" },
+
+    { "id" : "T019", "gatewayId" : "G002", "discoveryTime" : "2019-12-02 13:54:22" },
+
+    { "id" : "T020", "gatewayId" : "G002", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T021", "gatewayId" : "G003", "discoveryTime" : "2019-12-02 13:54:22" },
+
+    { "id" : "T022", "gatewayId" : "G003", "discoveryTime" : "2019-12-02 13:42:22" },
+
+    { "id" : "T023", "gatewayId" : "G003", "discoveryTime" : "2019-12-02 13:22:22" },
+
+    { "id" : "T024", "gatewayId" : "G003", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T025", "gatewayId" : "G003", "discoveryTime" : "2019-12-02 13:21:22" },
+
+    { "id" : "T026", "gatewayId" : "G003", "discoveryTime" : "2019-12-02 13:23:22" },
+
+    { "id" : "T027", "gatewayId" : "G003", "discoveryTime" : "2019-12-02 13:32:22" },
+
+    { "id" : "T028", "gatewayId" : "G003", "discoveryTime" : "2019-12-02 13:32:22" },
+
+    { "id" : "T029", "gatewayId" : "G003", "discoveryTime" : "2019-12-02 13:56:22" },
+
+    { "id" : "T030", "gatewayId" : "G003", "discoveryTime" : "2019-12-02 13:10:22" },
+
+    { "id" : "T031", "gatewayId" : "G004", "discoveryTime" : "2019-12-02 13:44:22" },
+
+    { "id" : "T032", "gatewayId" : "G004", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T033", "gatewayId" : "G004", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T034", "gatewayId" : "G004", "discoveryTime" : "2019-12-02 13:59:22" },
+
+    { "id" : "T035", "gatewayId" : "G004", "discoveryTime" : "2019-12-02 12:50:22" },
+
+    { "id" : "T036", "gatewayId" : "G004", "discoveryTime" : "2019-12-02 12:50:22" },
+
+    { "id" : "T037", "gatewayId" : "G004", "discoveryTime" : "2019-12-02 12:30:22" },
+
+    { "id" : "T038", "gatewayId" : "G004", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T039", "gatewayId" : "G004", "discoveryTime" : "2019-12-02 13:50:22" },
+
+    { "id" : "T040", "gatewayId" : "G004", "discoveryTime" : "2019-12-02 13:50:22" }
+]

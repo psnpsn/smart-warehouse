@@ -7,6 +7,7 @@ package tn.esprit.MSProducts.messaging;
 
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
+import tn.esprit.MSProducts.entity.Tag;
 
 /**
  *
@@ -16,8 +17,8 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 public class TagListener {
     
     @StreamListener(target = TagBinding.TAG_READING)
-    public void processTagChannelTagReading(String msg) {
-        System.out.println(msg);
+    public void processTagChannelTagReading(Tag tag) {
+        System.out.println(tag.toString());
     }
     
 }

@@ -1,0 +1,7 @@
+[
+    { "_id" : "L001", "gatewayId" : "G001", "description" : "North-West location for storing food consumable products", "maxHumidity" : 95, "minHumidity" : 80, "maxTemp" : 55, "minTemp" : 35 },
+    { "_id" : "L002", "gatewayId" : "G002", "description" : "North-East location for storing food consumable products", "maxHumidity" : 95, "minHumidity" : 80, "maxTemp" : 55, "minTemp" : 35 },
+    { "_id" : "L003", "gatewayId" : "G003", "description" : "South-West location for storing books", "maxHumidity" : 50, "minHumidity" : 30, "maxTemp" : 70, "minTemp" : 10 },
+    { "_id" : "L004", "gatewayId" : "G004", "description" : "South-East location for storing electronic devices", "maxHumidity" : 30, "minHumidity" : 50, "maxTemp" : 65, "minTemp" : 10 }
+    
+]

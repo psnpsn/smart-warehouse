@@ -7,21 +7,21 @@ package tn.esprit.MSProducts.service;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import tn.esprit.MSProducts.entity.Product;
+import tn.esprit.MSProducts.entity.Category;
 
 /**
  *
  * @author psn
  */
-public interface ProductService {
+public interface CategoryService {
     
-    public Flux<Product> getAll();
+    public Flux<Category> getAll();
     
-    public Mono<Product> getById(final String id);
+    public Mono<Category> getById(final String id);
     
-    public Mono update(final String id, final Product product);
+    public Mono update(final String id, final Category category);
     
-    public Mono save(final Product product);
+    public Mono save(final Category category);
     
     public Mono delete(final String id);
     

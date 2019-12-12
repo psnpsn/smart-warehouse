@@ -16,41 +16,38 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import tn.esprit.MSProducts.entity.Product;
-import tn.esprit.MSProducts.service.ProductService;
-import tn.esprit.MSProducts.service.ProductServiceImpl;
+import tn.esprit.MSProducts.entity.Category;
+import tn.esprit.MSProducts.service.CategoryService;
 
 /**
  *
  * @author psn
  */
 @RestController
-@RequestMapping("product")
-public class ProductController {
+@RequestMapping("category")
+public class CategoryController {
     
-        @Autowired
-        private ProductService productService;
-
-        
-	@GetMapping
-	public Flux<Product> getAll() {
-		return productService.getAll();
+    @Autowired
+    private CategoryService categoryService;
+    
+    @GetMapping
+	public Flux<Category> getAll() {
+		return categoryService.getAll();
 	}
 	@GetMapping("{id}")
 	public Mono getById(@PathVariable("id") final String id) {
-		return productService.getById(id);
+		return categoryService.getById(id);
 	}
 	@PutMapping("{id}")
-	public Mono updateById(@PathVariable("id") final String id, @RequestBody final Product product) {
-		return productService.update(id, product);
+	public Mono updateById(@PathVariable("id") final String id, @RequestBody final Category category) {
+		return categoryService.update(id, category);
 	}
 	@PostMapping
-	public Mono save(@RequestBody final Product product) {
-		return productService.save(product);
+	public Mono save(@RequestBody final Category category) {
+		return categoryService.save(category);
 	}
 	@DeleteMapping("{id}")
 	public Mono delete(@PathVariable final String id) {
-		return productService.delete(id);
+		return categoryService.delete(id);
 	}
-        
 }

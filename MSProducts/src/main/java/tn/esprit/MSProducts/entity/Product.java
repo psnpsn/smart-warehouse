@@ -21,16 +21,17 @@ public class Product {
     private String name;
     private String description;
     private Double price;
-    private Date addedDate;
+    private String addedDate;
     private String condition;
     private Tag tag;
     private Location location;
     private Category category;
+    private String supplierId;
 
     public Product() {
     }
 
-    public Product(String id, String name, String description, Double price, Date addedDate, String condition, Tag tag, Location location, Category category) {
+    public Product(String id, String name, String description, Double price, String addedDate, String condition, Tag tag, Location location, Category category, String supplierId) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -40,6 +41,7 @@ public class Product {
         this.tag = tag;
         this.location = location;
         this.category = category;
+        this.supplierId = supplierId;
     }
 
     
@@ -75,11 +77,11 @@ public class Product {
         this.price = price;
     }
 
-    public Date getAddedDate() {
+    public String getAddedDate() {
         return addedDate;
     }
 
-    public void setAddedDate(Date addedDate) {
+    public void setAddedDate(String addedDate) {
         this.addedDate = addedDate;
     }
 
@@ -114,6 +116,20 @@ public class Product {
     public void setCategory(Category category) {
         this.category = category;
     }
+
+    public String getSupplierId() {
+        return supplierId;
+    }
+
+    public void setSupplierId(String supplierId) {
+        this.supplierId = supplierId;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" + "id=" + id + ", name=" + name + ", description=" + description + ", price=" + price + ", addedDate=" + addedDate + ", condition=" + condition + ", tag=" + tag + ", location=" + location + ", category=" + category + ", supplierId=" + supplierId + '}';
+    }
+    
     
     
 }

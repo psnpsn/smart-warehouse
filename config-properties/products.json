@@ -1,0 +1,12 @@
+{
+    "_id" : "P001",
+    "name" : "Potato",
+    "description" : "Potato from zaghouane",
+    "price" : 0.7,
+    "addedDate" : "2019-12-03",
+    "condition" : "90,30",
+    "tag" : { "_id" : "T001", "gatewayId" : "G001", "discoveryTime" : "2019-12-02 13:50:22" },
+    "location" : { "_id" : "L001", "gatewayId" : "G001", "description" : "North-West location for storing food consumable products", "maxHumidity" : 95, "minHumidity" : 80, "maxTemp" : 55, "minTemp" : 35 },
+    "category" : { "_id" : "C001", "name" : "Vegetable", "description" : "Vegetables are consumable products that should be kept safe for humans", "optimalHumidity" : 90, "optimalTemperature" : 40 },
+    "supplierId" : "S001"
+}

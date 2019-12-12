@@ -1,0 +1,11 @@
+[
+    { "_id" : "C001", "name" : "Vegetable", "description" : "Vegetables are consumable products that should be kept safe for humans", "optimalHumidity" : 90, "optimalTemperature" : 40 },
+    { "_id" : "C002", "name" : "Fruit", "description" : "Fruits are consumable products that should be kept safe for humans", "optimalHumidity" : 90, "optimalTemperature" : 40 },
+    { "_id" : "C003", "name" : "NewBook", "description" : "New books are resistent and not suspected to decay", "optimalHumidity" : 30, "optimalTemperature" : 20 },
+    { "_id" : "C004", "name" : "OldBook", "description" : "Old books are less resistent and more suspectable to decay", "optimalHumidity" : 40, "optimalTemperature" : 20 },
+    { "_id" : "C005", "name" : "Chocolate", "description" : "Chocolate are consumable products that should be kept safe for humans", "optimalHumidity" : 85, "optimalTemperature" : 35 },
+    { "_id" : "C006", "name" : "Antenna", "description" : "Antennas are electronic devices", "optimalHumidity" : 40, "optimalTemperature" : 15 },
+    { "_id" : "C007", "name" : "Processor", "description" : "Processors are electronic devices", "optimalHumidity" : 40, "optimalTemperature" : 15 },
+    { "_id" : "C008", "name" : "HardDrive", "description" : "Hard drives are electronic devices", "optimalHumidity" : 40, "optimalTemperature" : 15 },
+    { "_id" : "C009", "name" : "GraphicCard", "description" : "Graphic cards are electronic devices", "optimalHumidity" : 40, "optimalTemperature" : 15 }
+]
