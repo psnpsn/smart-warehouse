@@ -3,21 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tn.esprit.MSTagReader;
+package tn.esprit.MSEmployees.messaging;
 
 /**
  *
- * @author oussa
+ * @author psn
  */
-public class Badge {
+public class BadgeRead {
     private String id;
     private String doorId;
     private String discoveryTime;
 
-    public Badge() {
+    public BadgeRead() {
     }
 
-    public Badge(String id, String doorId, String discoveryTime) {
+    public BadgeRead(String id, String doorId, String discoveryTime) {
         this.id = id;
         this.doorId = doorId;
         this.discoveryTime = discoveryTime;
@@ -49,11 +49,8 @@ public class Badge {
 
     @Override
     public String toString() {
-        return "Badge{" + "id=" + id + ", doorId=" + doorId + ", discoveryTime=" + discoveryTime + '}';
+        return "BadgeRead{" + "id=" + id + ", doorId=" + doorId + ", discoveryTime=" + discoveryTime + '}';
     }
-    
-    
-    
     
     
 }

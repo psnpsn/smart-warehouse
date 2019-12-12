@@ -3,18 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tn.esprit.MSProducts.repository;
+package tn.esprit.MSEmployees.repository;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
-import reactor.core.publisher.Mono;
-import tn.esprit.MSProducts.entity.Location;
+import tn.esprit.MSEmployees.entity.Badge;
 
 /**
  *
  * @author psn
  */
-public interface LocationRepository extends ReactiveMongoRepository<Location, String> {
-    
-    public Mono<Location> findOneByGatewayId(final String gatewayId);
+public interface BadgeRepository extends ReactiveMongoRepository<Badge, String>{
     
 }

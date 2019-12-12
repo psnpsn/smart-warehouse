@@ -6,6 +6,7 @@
 package tn.esprit.MSEmployees.repository;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+import reactor.core.publisher.Mono;
 import tn.esprit.MSEmployees.entity.Employee;
 
 /**
@@ -13,5 +14,7 @@ import tn.esprit.MSEmployees.entity.Employee;
  * @author psn
  */
 public interface EmployeeRepository extends ReactiveMongoRepository<Employee, String> {
+
+    public Mono<Employee> findByBadgeId(String id);
     
 }

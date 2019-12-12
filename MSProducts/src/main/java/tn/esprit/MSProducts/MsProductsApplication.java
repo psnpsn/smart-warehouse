@@ -43,7 +43,7 @@ public class MsProductsApplication {
                 Mono<Category> cat = categoryService.getById("C001");
                 category = cat.block();
                 
-                Product product = new Product("POO1","Potato","Potato from kairouane",0.7,"2019-11-29","85,30",tag,location,category,"S001");
+                Product product = new Product("POO1","Potato","Potato from kairouane",0.7,"2019-11-29","85,30",tag.getId(),location,category,"S001");
                 Mono<Product> prod = productService.save(product);
                 Product pro = prod.block();
                 System.out.println(pro.toString());

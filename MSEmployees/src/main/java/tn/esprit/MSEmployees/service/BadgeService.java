@@ -9,46 +9,43 @@ import java.util.Objects;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import tn.esprit.MSEmployees.entity.Employee;
-import tn.esprit.MSEmployees.repository.EmployeeRepository;
+import tn.esprit.MSEmployees.entity.Badge;
+import tn.esprit.MSEmployees.repository.BadgeRepository;
 
 /**
  *
  * @author psn
  */
 @Service
-public class EmployeeService {
+public class BadgeService {
     
-    private final EmployeeRepository empRepository;
+    private final BadgeRepository empRepository;
 
-    public EmployeeService(final EmployeeRepository empRepository) {
+    public BadgeService(final BadgeRepository empRepository) {
         this.empRepository = empRepository;
     }
     
     
     
-    public Flux<Employee> getAll() {
+    public Flux<Badge> getAll() {
 		return empRepository.findAll().switchIfEmpty(Flux.empty());
 	}
-	public Mono<Employee> getById(final String id) {
+	public Mono<Badge> getById(final String id) {
 		return empRepository.findById(id);
 	}
-	public Mono update(final String id, final Employee emp) {
+	public Mono update(final String id, final Badge emp) {
 		return empRepository.save(emp);
 	}
-	public Mono save(final Employee emp) {
+	public Mono save(final Badge emp) {
 		return empRepository.save(emp);
 	}
 	public Mono delete(final String id) {
-		final Mono<Employee> dbEmployee = getById(id);
-		if (Objects.isNull(dbEmployee)) {
+		final Mono<Badge> dbBadge = getById(id);
+		if (Objects.isNull(dbBadge)) {
 			return Mono.empty();
 		}
 		return getById(id).switchIfEmpty(Mono.empty()).filter(Objects::nonNull).flatMap(empToBeDeleted -> empRepository
 				.delete(empToBeDeleted).then(Mono.just(empToBeDeleted)));
 	}
-
-    public Mono<Employee> getByBadgeId(String id) {
-        return empRepository.findByBadgeId(id);
-    }
+    
 }

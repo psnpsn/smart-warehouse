@@ -23,7 +23,7 @@ public class Product {
     private Double price;
     private String addedDate;
     private String condition;
-    private Tag tag;
+    private String tagId;
     private Location location;
     private Category category;
     private String supplierId;
@@ -31,14 +31,14 @@ public class Product {
     public Product() {
     }
 
-    public Product(String id, String name, String description, Double price, String addedDate, String condition, Tag tag, Location location, Category category, String supplierId) {
+    public Product(String id, String name, String description, Double price, String addedDate, String condition, String tagId, Location location, Category category, String supplierId) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.addedDate = addedDate;
         this.condition = condition;
-        this.tag = tag;
+        this.tagId = tagId;
         this.location = location;
         this.category = category;
         this.supplierId = supplierId;
@@ -93,12 +93,12 @@ public class Product {
         this.condition = condition;
     }
 
-    public Tag getTag() {
-        return tag;
+    public String getTagId() {
+        return tagId;
     }
 
-    public void setTag(Tag tag) {
-        this.tag = tag;
+    public void setTagId(String tagId) {
+        this.tagId = tagId;
     }
 
     public Location getLocation() {
@@ -127,7 +127,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" + "id=" + id + ", name=" + name + ", description=" + description + ", price=" + price + ", addedDate=" + addedDate + ", condition=" + condition + ", tag=" + tag + ", location=" + location + ", category=" + category + ", supplierId=" + supplierId + '}';
+        return "Product{" + "id=" + id + ", name=" + name + ", description=" + description + ", price=" + price + ", addedDate=" + addedDate + ", condition=" + condition + ", tagId=" + tagId + ", location=" + location + ", category=" + category + ", supplierId=" + supplierId + '}';
     }
     
     

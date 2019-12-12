@@ -8,6 +8,7 @@ package tn.esprit.MSProducts.service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import tn.esprit.MSProducts.entity.Product;
+import tn.esprit.MSProducts.entity.Tag;
 
 /**
  *
@@ -24,5 +25,7 @@ public interface ProductService {
     public Mono save(final Product product);
     
     public Mono delete(final String id);
+
+    public Mono<Product> getByTagId(String tagId);
     
 }

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import tn.esprit.MSProducts.entity.Product;
+import tn.esprit.MSProducts.entity.Tag;
 import tn.esprit.MSProducts.repository.ProductRepository;
 
 /**
@@ -53,6 +54,11 @@ public class ProductServiceImpl implements ProductService {
 	}
 	return getById(id).switchIfEmpty(Mono.empty()).filter(Objects::nonNull).flatMap(productToBeDeleted -> productRepository
 		.delete(productToBeDeleted).then(Mono.just(productToBeDeleted)));
+    }
+
+    @Override
+    public Mono<Product> getByTagId(String tagId) {
+        return productRepository.findOneByTagId(tagId);
     }
     
 }

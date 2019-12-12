@@ -24,5 +24,7 @@ public interface LocationService {
     public Mono save(final Location location);
     
     public Mono delete(final String id);
+
+    public Mono<Location> getByGatewayId(String gatewayId);
     
 }

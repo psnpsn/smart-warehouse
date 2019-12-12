@@ -52,5 +52,10 @@ public class LocationServiceImpl implements LocationService {
         return dbLocation.switchIfEmpty(Mono.empty()).filter(Objects::nonNull).flatMap(locationToBeDeleted -> locationRepository
 		.delete(locationToBeDeleted).then(Mono.just(locationToBeDeleted)));
     }
+
+    @Override
+    public Mono<Location> getByGatewayId(String gatewayId) {
+        return locationRepository.findOneByGatewayId(gatewayId);
+    }
     
 }

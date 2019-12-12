@@ -6,12 +6,16 @@
 package tn.esprit.MSProducts.repository;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+import reactor.core.publisher.Mono;
 import tn.esprit.MSProducts.entity.Product;
+import tn.esprit.MSProducts.entity.Tag;
 
 /**
  *
  * @author psn
  */
 public interface ProductRepository extends ReactiveMongoRepository<Product, String>{
+    
+    public Mono<Product> findOneByTagId(final String tagId);
     
 }
