@@ -7,7 +7,6 @@
 package tn.esprit.MSForklift.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.stereotype.Repository;
 import tn.esprit.MSForklift.entity.Forklift;
 
 /**
@@ -16,7 +15,6 @@ import tn.esprit.MSForklift.entity.Forklift;
  */
 public interface ForkliftRepository extends MongoRepository<Forklift, String>{
     
-    public Forklift findById(String id);
     
 }
 

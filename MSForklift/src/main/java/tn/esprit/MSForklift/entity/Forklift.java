@@ -38,7 +38,7 @@ public class Forklift {
         this.id = id;
     }
 
-    public String getDisponibilite() {
+    public int getDisponibilite() {
         return disponibilite;
     }
 

@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * @author user
  */
 
-Document( collection = "client" )
+ @Document( collection = "client" )
 public class Client {
 
 @Id
